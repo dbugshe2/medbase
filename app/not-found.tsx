@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SplashCursor } from "../components/SplashCursor";
 
-const Home = () => {
+const ComingSoon = () => {
   return (
     <div className="min-h-screen max-h-screen flex flex-1 justify-center items-center">
       <SplashCursor
@@ -130,4 +130,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ComingSoon;
