@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/shared-utils";
 
 export const Logo = ({
   className,
@@ -6,9 +6,9 @@ export const Logo = ({
 }: React.SVGProps<SVGSVGElement>) => {
   return (
 
-<svg 
-viewBox="0 0 127 133" 
-fill="currentColor" 
+<svg
+viewBox="0 0 127 133"
+fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
     aria-label='Veo Logo'
     className={cn('w-32', className)}

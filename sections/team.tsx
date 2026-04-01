@@ -1,5 +1,5 @@
 import { ScrollAnimation, ScrollScale, ScrollTranslateX, ScrollTranslateY } from "@/components/systaliko-ui/blocks/scroll-animation";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/shared-utils";
 import Image from "next/image";
 import React from "react";
 
@@ -25,37 +25,37 @@ const TEAM_MEMBERS: TeamMember[] = [
         name: 'Emilio',
         role: 'CTO'
     },
-    {
-        avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
-        name: 'Samia',
-        role: 'COO'
-    },
-    {
-        avatar: 'https://images.unsplash.com/photo-1522556189639-b150ed9c4330?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
-        name: 'Alex',
-        role: 'Engineer'
-    },
-    {
-        avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
-        name: 'Ema',
-        role: 'Head of Product'
-    },
-    {
-        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
-        name: 'Carlos',
-        role: 'Engineer'
-    },
-    {
-        avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
-        name: 'Campos',
-        role: 'Engineer'
-    }
+    // {
+    //     avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
+    //     name: 'Samia',
+    //     role: 'COO'
+    // },
+    // {
+    //     avatar: 'https://images.unsplash.com/photo-1522556189639-b150ed9c4330?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
+    //     name: 'Alex',
+    //     role: 'Engineer'
+    // },
+    // {
+    //     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
+    //     name: 'Ema',
+    //     role: 'Head of Product'
+    // },
+    // {
+    //     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
+    //     name: 'Carlos',
+    //     role: 'Engineer'
+    // },
+    // {
+    //     avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
+    //     name: 'Campos',
+    //     role: 'Engineer'
+    // }
 ]
 
 export function TeamCard ({member, className, ...props}:React.ComponentProps<'div'> & {member: TeamMember}) {
     return (
         <div className={cn('space-y-6', className)} {...props}>
-            <Image 
+            <Image
                 src={member.avatar}
                 alt={member.name}
                 width={200}
