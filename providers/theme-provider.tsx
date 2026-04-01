@@ -1,16 +1,8 @@
-"use client";
+'use client';
 
-import { ThemeProvider as NextThemeProvider } from "next-themes";
-import { type PropsWithChildren } from "react";
+import * as React from 'react';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
-export function ThemeProvider({ children }: PropsWithChildren) {
-  return (
-    <NextThemeProvider
-      disableTransitionOnChange
-      attribute="class"
-      value={{ light: "light-mode", dark: "dark-mode" }}
-    >
-      {children}
-    </NextThemeProvider>
-  );
+export function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }
