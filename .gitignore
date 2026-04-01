@@ -22,6 +22,9 @@
 
 # misc
 .DS_Store
+
+# tool artifacts (local resources, not project assets)
+/.kombai/
 *.pem
 
 # debug
