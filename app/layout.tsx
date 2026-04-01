@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, IBM_Plex_Mono, Lora } from 'next/font/google';
+import {  Inter, JetBrains_Mono, Lora } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { data } from '@/data/data';
@@ -7,18 +7,19 @@ import { ThemeProvider } from '@/providers/theme-provider';
 import { Header } from '@/sections/header';
 import { Footer } from '@/sections/footer';
 
-const fontSans = Plus_Jakarta_Sans({
-  variable: '--font-sans',
-  subsets: ['latin'],
+const fontSans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
-const fontMono = IBM_Plex_Mono({
-  variable: '--font-mono',
-  subsets: ['latin'],
-  weight: ['400'],
-});
+
 const fontSerif = Lora({
-  variable: '--font-serif',
-  subsets: ['latin'],
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
+
+const fontMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -52,7 +53,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <Header />
