@@ -6,6 +6,7 @@ import { data } from '@/data/data';
 import { ThemeProvider } from '@/providers/theme-provider';
 import { Header } from '@/sections/header';
 import { Footer } from '@/sections/footer';
+import { Toaster } from '@/components/ui/sonner';
 
 const fontSans = Inter({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Toaster />
           <Footer />
         </ThemeProvider>
 
