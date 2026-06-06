@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import {  Inter, JetBrains_Mono, Lora } from 'next/font/google';
+import {  Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { data } from '@/data/data';
@@ -13,7 +13,7 @@ const fontSans = Inter({
   variable: "--font-sans",
 });
 
-const fontSerif = Lora({
+const fontSerif = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
 });
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: data.description,
     images: [
       {
-        url: 'https://veo.vercel.app/og-image.png',
+        url: 'https://medbase.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: data.name,

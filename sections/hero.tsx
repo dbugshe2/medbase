@@ -15,42 +15,39 @@ export function Hero() {
             className="text-5xl font-extralight"
             variants={animationVariants}
           >
-            <a
+            {/* <a
               target="_blank"
-              href="https://systaliko-ui.vercel.app/docs/templates/veo"
-            >
+              href="#0"
+            > */}
               <Badge variant="outline" className="py-2 px-4">
                 <div className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/50"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </div>
-                New <strong>Systaliko UI</strong> template available - Veo
-                agency ✨
+                <strong>Strategic Parnership</strong> Outline ✨
               </Badge>
-            </a>
+            {/* </a> */}
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl md:max-w-4/5 font-bold"
+            className="text-4xl md:text-5xl lg:text-6xl md:max-w-4/5 font-bold font-serif"
             variants={animationVariants}
           >
-            We build brands and products people remember
+            Architecting health equity through research, technology, and law.
           </motion.h1>
           <motion.p
             variants={animationVariants}
             className="leading-normal tracking-tight text-muted-foreground max-w-[45ch]"
           >
-            Crafting exceptional digital experiences through innovative design
-            solutions. From concept to creation, we transform your vision into
-            reality.
+            We translate raw health data into scalable technology and binding legislative frameworks across the African continent.
           </motion.p>
 
           <motion.div
             className="flex flex-wrap gap-2"
             variants={animationVariants}
           >
-            <Button>Start your project</Button>
-            <Button variant="secondary">See our work</Button>
+            <Button>Partner with us</Button>
+            <Button variant="secondary">Read The Blueprint</Button>
           </motion.div>
         </MotionConfig>
       </ContainerStagger>

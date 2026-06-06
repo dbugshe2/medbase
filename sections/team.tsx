@@ -12,19 +12,19 @@ interface TeamMember {
 const TEAM_MEMBERS: TeamMember[] = [
     {
         avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fHww',
-        name: 'Magdalina',
-        role: 'CEO'
+        name: 'Atunde Ahmed Olarewaju',
+        role: 'Health Systems Researcher'
     },
     {
         avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fHww',
-        name: 'Jamie',
-        role: 'CTO'
+        name: 'Afolabi Abdulateef',
+        role: 'Legal & Policy Expert'
     },
-    {
-        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
-        name: 'Emilio',
-        role: 'CTO'
-    },
+    // {
+    //     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
+    //     name: 'Emilio',
+    //     role: 'CTO'
+    // },
     // {
     //     avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D',
     //     name: 'Samia',
@@ -84,7 +84,7 @@ return (
                     </ScrollTranslateX>
                     </div>
                     <ScrollScale inputRange={[0, 0.5]} scaleRange={[1.4, 1]} className="w-10/12 flex flex-col justify-center text-center items-center mx-auto origin-center">
-                        <h2 className="text-4xl md:text-5xl font-bold">Compact team of strategists</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold">The dual expertise required to rewrite the system.</h2>
                     </ScrollScale>
                     <div className="max-w-full">
                     <ScrollTranslateX inputRange={[0.4, 0.9]} xRange={["100%", "-50%"]} className="flex flex-nowrap gap-4">

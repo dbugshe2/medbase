@@ -10,27 +10,27 @@ import { motion, MotionConfig } from 'motion/react';
 const VALUES = [
   {
     id: 'value-craft',
-    title: 'Craft driven',
+    title: 'Downstream Delivery',
     icon: Axis3dIcon,
     iconBg: 'from-indigo-600 to-indigo-500 ',
     description:
-      'We design with craft, not with a blueprint. We build modern web products using component-driven development, automated testing, and performance-first best practices. Our code is documented and deliverable-ready.',
+      'Global organisations excel at clinical delivery and humanitarian aid, but rarely alter the structural rules of the health system itself.',
   },
   {
     id: 'value-startegy',
-    title: 'Strategy first',
+    title: 'Upstream Research',
     icon: ListStartIcon,
     iconBg: ' from-pink-600 to-pink-500 ',
     description:
-      'We start with a clear strategy and build a product that solves real problems. We focus on user research, information architecture, and product flows that solve real problems.',
+      'Traditional think-tanks produce vital, granular data that too often remains locked away in academic white papers, lacking functional application.',
   },
   {
     id: 'value-business',
-    title: 'Business minded',
+    title: 'Unprotected Innovation',
     icon: Building2Icon,
     iconBg: 'from-emerald-600 to-emerald-500 ',
     description:
-      'We understand the business and its needs. We craft messaging that fits your brand and speaks to real user needs — from hero lines and product microcopy to onboarding flows and launch email sequences.',
+      'Digital tools are deployed without robust data privacy laws, and climate-health crises hit communities without proactive resource allocation policies in place.',
   },
 ];
 
@@ -45,14 +45,14 @@ export function Values() {
             animation="bottom"
             className="text-3xl md:text-4xl font-bold"
           >
-            Bold brands, Beautiful products for Real growth
+          The architecture of global health is currently fragmented.
           </TextStaggerInview>
-          <Button variant={'link'}>Request demo</Button>
+          <Button variant={'link'}>See how we fix it →</Button>
         </div>
         <ContainerStagger
           className="
-            col-span-2 flex flex-col md:grid grid-cols-2 md:grid-rows-[50px_1fr_50px_1fr_50px] gap-6 
-            [&>*]:row-span-2 
+            col-span-2 flex flex-col md:grid grid-cols-2 md:grid-rows-[50px_1fr_50px_1fr_50px] gap-6
+            [&>*]:row-span-2
             [&>*:nth-child(2)]:row-start-2
         "
         >

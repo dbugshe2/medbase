@@ -15,7 +15,7 @@ export function Header() {
             <div className="size-6">
                 <Logo className="size-full" />
                 </div>
-            <span className="inline-block text-lg font-bold">Veo</span>
+            <span className="inline-block text-lg font-bold">Medbase </span>Africa
           </Link>
 
         <DesktopNav />

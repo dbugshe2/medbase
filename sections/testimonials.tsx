@@ -49,9 +49,9 @@ export function Testimonials() {
     return (
         <section className="py-12 px-6">
             <div className="text-center mx-auto max-w-3xl flex flex-col items-center space-y-4">
-        <TextStaggerInview animation="bottom" as={'h2'} className="text-4xl font-bold">What our clients say</TextStaggerInview>
+        <TextStaggerInview animation="bottom" as={'h2'} className="text-4xl font-bold">Proven capacity to legislate change.</TextStaggerInview>
         <p className="text-muted-foreground max-w-[38ch]">
-          We have worked with some of the most successful startups in the world, and they all have something to say about us.
+        Our work moves from foundational advocacy to signed legislation — here is what that looks like in practice.
         </p>
       </div>
 
