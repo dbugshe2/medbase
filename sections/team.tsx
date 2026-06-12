@@ -16,14 +16,12 @@ interface TeamMember {
 
 const TEAM_MEMBERS: TeamMember[] = [
   {
-    avatar:
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fHww',
+    avatar: '/ahmad.jpeg',
     name: 'Atunde Ahmed Olarewaju',
     role: 'Health Systems Researcher',
   },
   {
-    avatar:
-      'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fHww',
+    avatar: '/bidemi.jpeg',
     name: 'Afolabi Abdulateef',
     role: 'Legal & Policy Expert',
   },
