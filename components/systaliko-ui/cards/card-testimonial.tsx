@@ -33,7 +33,7 @@ function useCardTestimonialContext() {
   const context = React.useContext(CardTestimonialContext);
   if (context === undefined) {
     throw new Error(
-      'useCardTestimonialContext must be used within a CardTestimonialProvider',
+      'useCardTestimonialContext must be used within a CardTestimonialProvider'
     );
   }
   return context;
@@ -78,7 +78,7 @@ export const TestimonialAuthor = ({
         </AvatarFallback>
       </Avatar>
       <div>
-        <h4 className="block text-lg font-semibold tracking-tight md:text-xl">
+        <h4 className="block text-base font-semibold tracking-tight md:text-xl">
           {authorName}
         </h4>
         <span className="block text-sm text-muted-foreground ">

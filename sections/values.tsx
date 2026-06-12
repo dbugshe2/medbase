@@ -3,7 +3,12 @@ import { ContainerStagger } from '@/components/systaliko-ui/blocks/container-sta
 import { TextStaggerInview } from '@/components/systaliko-ui/text/text-stagger-inview';
 import { ANIMATION_VARIANTS } from '@/components/systaliko-ui/utils/animation-variants';
 import { Button } from '@/components/ui/button';
-import { Axis3dIcon, Building2Icon, ListStartIcon } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Axis3dIcon,
+  Building2Icon,
+  ListStartIcon,
+} from 'lucide-react';
 import { stagger } from 'motion';
 import { motion, MotionConfig } from 'motion/react';
 
@@ -12,7 +17,7 @@ const VALUES = [
     id: 'value-craft',
     title: 'Downstream Delivery',
     icon: Axis3dIcon,
-    iconBg: 'from-indigo-600 to-indigo-500 ',
+    iconBg: 'from-indigo-400 to-indigo-300 ',
     description:
       'Global organisations excel at clinical delivery and humanitarian aid, but rarely alter the structural rules of the health system itself.',
   },
@@ -20,7 +25,7 @@ const VALUES = [
     id: 'value-startegy',
     title: 'Upstream Research',
     icon: ListStartIcon,
-    iconBg: ' from-pink-600 to-pink-500 ',
+    iconBg: ' from-pink-400 to-pink-300 ',
     description:
       'Traditional think-tanks produce vital, granular data that too often remains locked away in academic white papers, lacking functional application.',
   },
@@ -28,7 +33,7 @@ const VALUES = [
     id: 'value-business',
     title: 'Unprotected Innovation',
     icon: Building2Icon,
-    iconBg: 'from-emerald-600 to-emerald-500 ',
+    iconBg: 'from-emerald-400 to-emerald-300 ',
     description:
       'Digital tools are deployed without robust data privacy laws, and climate-health crises hit communities without proactive resource allocation policies in place.',
   },
@@ -43,11 +48,11 @@ export function Values() {
           <TextStaggerInview
             as="h2"
             animation="bottom"
-            className="text-3xl md:text-4xl font-bold"
+            className="text-3xl md:text-4xl font-bold font-serif"
           >
-          The architecture of global health is currently fragmented.
+            The architecture of global health is currently fragmented.
           </TextStaggerInview>
-          <Button variant={'link'}>See how we fix it →</Button>
+          <Button variant={'outline'}>See how we fix it →</Button>
         </div>
         <ContainerStagger
           className="
@@ -60,14 +65,14 @@ export function Values() {
             {VALUES.map((value) => (
               <motion.div
                 key={value.id}
-                className="py-6 px-4 space-y-4 shadow bg-card rounded-xl border place-content-center"
+                className="py-6 px-4 space-y-4  bg-card rounded-xl border place-content-center"
                 variants={variants}
                 transition={{ duration: 0.3, ease: 'easeOut' }}
               >
                 <div
                   className={`size-14 flex items-center justify-center -bg-linear-45 rounded ${value.iconBg}`}
                 >
-                  <value.icon className="size-8 text-muted" />
+                  {/*<value.icon className="size-8 text-muted" />*/}
                 </div>
 
                 <div className="space-y-2">
