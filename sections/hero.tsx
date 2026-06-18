@@ -46,8 +46,8 @@ export function Hero() {
             className="flex flex-wrap gap-2"
             variants={animationVariants}
           >
-            <Button>Partner with us</Button>
-            <Button variant="secondary">Read The Blueprint</Button>
+            <Button size={"lg"}>Partner with us</Button>
+            {/* <Button variant="secondary">Read The Blueprint</Button> */}
           </motion.div>
         </MotionConfig>
       </ContainerStagger>
