@@ -22,7 +22,7 @@ const TESTIMONIALS = [
     profession: 'Kwara & Kogi States, Nigeria',
     rating: 5,
     quote:
-      '"Our leadership drove the foundational advocacy that directly resulted in the adoption of the Violence Against Persons Prohibition (VAPP) Act in Kwara and Kogi states — a complex issue moved from research to signed legislation."',
+      '"Our leadership drove the foundational advocacy that directly resulted in the adoption of the Violence Against Persons Prohibition (VAPP) Act in Kwara and Kogi states  a complex issue moved from research to signed legislation."',
     avatarUrl: '',
     //   'https://lh3.googleusercontent.com/a/ACg8ocKV3NNwtqyu8_gbuVEDARpyUpTuFtb_XPAIETgsD3wbXx4F4xlE=s576-c-no',
   },
@@ -32,7 +32,7 @@ const TESTIMONIALS = [
     profession: 'Nigeria Youth Futures Fund · Ongoing',
     rating: 4.5,
     quote:
-      'Our ongoing Gender-Responsive Alcohol Policy work demonstrates our capacity to hold corporate entities accountable through evidence-backed policy — managing complex, multi-stakeholder advocacy at scale.',
+      'Our ongoing Gender-Responsive Alcohol Policy work demonstrates our capacity to hold corporate entities accountable through evidence-backed policy  managing complex, multi-stakeholder advocacy at scale.',
     avatarUrl: '',
     //   'https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D',
   },
@@ -70,7 +70,7 @@ export function Testimonials() {
           Proven capacity to legislate change.
         </TextStaggerInview>
         <p className="text-muted-foreground max-w-[38ch]">
-          Our work moves from foundational advocacy to signed legislation — here
+          Our work moves from foundational advocacy to signed legislation  here
           is what that looks like in practice.
         </p>
       </div>

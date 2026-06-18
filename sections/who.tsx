@@ -16,7 +16,7 @@ export function Who() {
           className="font-medium tracking-tight text-secondary-foreground/70 italic"
         >
           The African ecosystem desperately lacks "translators." Medbase Africa
-          exists to fill this void — ensuring that innovation is legally
+          exists to fill this void  ensuring that innovation is legally
           protected, ethically deployed, and sustainably funded.
         </TextStaggerInview>
       </div>

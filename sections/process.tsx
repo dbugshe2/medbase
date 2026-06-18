@@ -10,14 +10,14 @@ const PROCESS_PHASES = [
     title: 'Research',
     duration: 'The Foundation . Step 1',
     description:
-      'We conduct granular, localised research to map the precise nature of health inequities, financing gaps, and digital barriers. We do not rely on external assumptions — every intervention is built on context-specific, evidence-based intelligence.',
+      'We conduct granular, localised research to map the precise nature of health inequities, financing gaps, and digital barriers. We do not rely on external assumptions  every intervention is built on context-specific, evidence-based intelligence.',
   },
   {
     id: 'phase-2',
     title: 'Translate',
     duration: 'The Bridge . Step 2',
     description:
-      'Research without application is merely theory. We leverage technology to translate findings into functional mechanisms — from digital frameworks for health data interoperability to platforms that simplify regulatory compliance for innovators.',
+      'Research without application is merely theory. We leverage technology to translate findings into functional mechanisms  from digital frameworks for health data interoperability to platforms that simplify regulatory compliance for innovators.',
   },
   {
     id: 'phase-3',
@@ -31,7 +31,7 @@ const PROCESS_PHASES = [
     title: 'Legislate',
     duration: 'The Anchor . Step 4',
     description:
-      'Our ultimate differentiator. Where advocacy creates momentum, our legal expertise codifies it. We identify legislative lacunas, draft model policies, and work directly with lawmakers — ensuring health equity is a permanent legal reality, not a temporary project.',
+      'Our ultimate differentiator. Where advocacy creates momentum, our legal expertise codifies it. We identify legislative lacunas, draft model policies, and work directly with lawmakers  ensuring health equity is a permanent legal reality, not a temporary project.',
   },
 ];
 

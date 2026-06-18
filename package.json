@@ -1,5 +1,5 @@
 {
-  "name": "veo",
+  "name": "medbase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -38,7 +38,7 @@
     "@types/node": "^20",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "baseline-browser-mapping": "^2.10.34",
+    "baseline-browser-mapping": "^2.10.38",
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
     "tailwindcss": "^4",

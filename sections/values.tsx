@@ -52,7 +52,7 @@ export function Values() {
           >
             The architecture of global health is currently fragmented.
           </TextStaggerInview>
-          <Button variant={'outline'}>See how we fix it →</Button>
+          {/* <Button variant={'outline'}>See how we fix it →</Button> */}
         </div>
         <ContainerStagger
           className="

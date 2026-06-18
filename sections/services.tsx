@@ -26,13 +26,13 @@ const SERVICES_CARDS = [
     id: 'Motion-interaction-service',
     title: 'Climate Resilience',
     description:
-      'Developing adaptive health policies that protect vulnerable communities from the public health impacts of climate change — from heat mortality to waterborne disease surges driven by extreme weather.',
+      'Developing adaptive health policies that protect vulnerable communities from the public health impacts of climate change  from heat mortality to waterborne disease surges driven by extreme weather.',
   },
   {
     id: 'content-copywriting-service',
     title: 'Policy & Advocacy',
     description:
-      'The cross-cutting anchor that ensures advancements in all four areas are enshrined in law and public policy. We measure success by laws passed and systems adopted — not reports published.',
+      'The cross-cutting anchor that ensures advancements in all four areas are enshrined in law and public policy. We measure success by laws passed and systems adopted  not reports published.',
   },
   // {
   //   id: 'growth-anilytics-service',
