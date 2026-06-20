@@ -3,9 +3,9 @@ import { Badge } from '@/components/ui/badge';
 
 export function About() {
   return (
-    <section className="py-16 px-8 min-h-screen place-content-center bg-accent">
+    <section className="py-16 px-8 min-h-screen place-content-center bg-secondary">
       <div className="flex flex-col space-y-4 justify-center items-center max-w-3xl mx-auto text-center">
-        <Badge className="py-2 px-4 text-sm" variant="secondary">
+        <Badge   variant="outline">
           Empower Africa to build equitable health systems
         </Badge>
         <TextStaggerInview

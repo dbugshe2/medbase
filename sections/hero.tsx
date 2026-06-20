@@ -1,7 +1,6 @@
 'use client';
 import { ContainerStagger } from '@/components/systaliko-ui/blocks/container-stagger';
 import { motion, MotionConfig } from 'motion/react';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ANIMATION_VARIANTS } from '@/components/systaliko-ui/utils/animation-variants';
 
@@ -30,10 +29,10 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl md:max-w-4/5 font-bold font-serif"
+            className="text-4xl leading-none md:text-5xl lg:text-6xl md:max-w-4/5 font-bold font-serif"
             variants={animationVariants}
           >
-            Architecting health equity through <span className="text-accent-foreground dark:text-primary">Research</span>, <span className="text-muted-foreground">Technology</span>, <span className="text-chart-1">Policy </span> <span>and </span> <span className='text-chart-3'> Advocacy</span>.
+            Architecting health equity through <span className="text-lime-500">Research</span>, <span className="text-chart-2">Technology</span>, <span className="text-chart-1">Policy </span> <span>and </span> <span className='text-chart-3'> Advocacy</span>.
           </motion.h1>
           <motion.p
             variants={animationVariants}
