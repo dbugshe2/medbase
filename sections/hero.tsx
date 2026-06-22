@@ -1,7 +1,6 @@
 'use client';
 import { ContainerStagger } from '@/components/systaliko-ui/blocks/container-stagger';
 import { motion, MotionConfig } from 'motion/react';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ANIMATION_VARIANTS } from '@/components/systaliko-ui/utils/animation-variants';
 
@@ -15,42 +14,39 @@ export function Hero() {
             className="text-5xl font-extralight"
             variants={animationVariants}
           >
-            <a
+            {/* <a
               target="_blank"
-              href="https://systaliko-ui.vercel.app/docs/templates/veo"
-            >
-              <Badge variant="outline" className="py-2 px-4">
+              href="#0"
+            > */}
+              {/* <Badge variant="outline" className="py-2 px-4">
                 <div className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/50"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </div>
-                New <strong>Systaliko UI</strong> template available - Veo
-                agency ✨
-              </Badge>
-            </a>
+                <strong>Strategic Partnership</strong> Outline ✨
+              </Badge> */}
+            {/* </a> */}
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl md:max-w-4/5 font-bold"
+            className="text-4xl leading-none md:text-5xl lg:text-6xl md:max-w-4/5 font-bold font-serif"
             variants={animationVariants}
           >
-            We build brands and products people remember
+            Architecting health equity through <span className="text-lime-500">Research</span>, <span className="text-chart-2">Technology</span>, <span className="text-chart-1">Policy </span> <span>and </span> <span className='text-chart-3'> Advocacy</span>.
           </motion.h1>
           <motion.p
             variants={animationVariants}
-            className="leading-normal tracking-tight text-muted-foreground max-w-[45ch]"
+            className="leading-normal text-lg tracking-tight text-muted-foreground max-w-[45ch]"
           >
-            Crafting exceptional digital experiences through innovative design
-            solutions. From concept to creation, we transform your vision into
-            reality.
+            We translate raw health data into scalable solutions and binding evidence-backed policy frameworks across the African continent.
           </motion.p>
 
           <motion.div
             className="flex flex-wrap gap-2"
             variants={animationVariants}
           >
-            <Button>Start your project</Button>
-            <Button variant="secondary">See our work</Button>
+            <Button size={"lg"}>Partner with us</Button>
+            {/* <Button variant="secondary">Read The Blueprint</Button> */}
           </motion.div>
         </MotionConfig>
       </ContainerStagger>

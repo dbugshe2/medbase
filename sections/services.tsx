@@ -6,40 +6,40 @@ import {
 const SERVICES_CARDS = [
   {
     id: 'service-starategy-identity-service',
-    title: 'Brand Strategy & Identity',
+    title: 'Digital Health & Data',
     description:
-      'help teams uncover a clear brand position and translate it into a concise voice and visual system. From naming and messaging to logo systems and brand guidelines.',
+      'Pioneering legal and technological frameworks that promote digital health adoption while fiercely protecting patient data rights and privacy. We build the compliance infrastructure that makes health innovation safe to scale.',
   },
   {
     id: 'UX-Product-design-service',
-    title: 'UX & Product Design',
+    title: 'Health Equity',
     description:
-      'focus on user research, information architecture, and product flows that solve real problems. Our designs are tested with prototypes and guided by metrics so you ship features that move KPIs.',
+      'Dismantling structural, gender-based, and socioeconomic barriers to essential healthcare access. We move beyond advocacy rhetoric to the legislative instruments that make equality enforceable.',
   },
   {
     id: 'web-development-service',
-    title: 'Web Development',
+    title: 'Health Financing',
     description:
-      'build modern web products using component-driven development, automated testing, and performance-first best practices. Our code is documented and deliverable-ready.',
+      "Researching and advocating for sustainable, innovative domestic financing models to reduce catastrophic out-of-pocket health expenditures for Africa's most vulnerable populations.",
   },
   {
     id: 'Motion-interaction-service',
-    title: 'Motion & Interaction',
+    title: 'Climate Resilience',
     description:
-      'Motion should inform, not distract. We design micro-interactions and page-level transitions that guide attention, improve perceived performance, and make products feel polished.',
+      'Developing adaptive health policies that protect vulnerable communities from the public health impacts of climate change  from heat mortality to waterborne disease surges driven by extreme weather.',
   },
   {
     id: 'content-copywriting-service',
-    title: 'Content & Copywriting',
+    title: 'Policy & Advocacy',
     description:
-      'We craft messaging that fits your brand and speaks to real user needs — from hero lines and product microcopy to onboarding flows and launch email sequences.',
+      'The cross-cutting anchor that ensures advancements in all four areas are enshrined in law and public policy. We measure success by laws passed and systems adopted  not reports published.',
   },
-  {
-    id: 'growth-anilytics-service',
-    title: 'Growth & Analytics',
-    description:
-      'We instrument analytics, design experiments, and run A/B tests that answer the questions behind growth. We build dashboards and recommend prioritized experiments that directly tie to business goals.',
-  },
+  // {
+  //   id: 'growth-anilytics-service',
+  //   title: 'Growth & Analytics',
+  //   description:
+  //     'We instrument analytics, design experiments, and run A/B tests that answer the questions behind growth. We build dashboards and recommend prioritized experiments that directly tie to business goals.',
+  // },
 ];
 
 export function Services() {
@@ -51,7 +51,7 @@ export function Services() {
             key={service.id}
             index={index}
             // className="min-h-[50vh] py-8 px-12 flex flex-wrap md:flex-nowrap md:gap-8 justify-between items-start even:border bg-card odd:bg-muted"
-            className="min-h-[50vh] py-8 px-12 flex gap-6 justify-between flex-wrap even:border bg-card odd:bg-muted"
+            className="min-h-[50vh] py-8 px-12 flex gap-6 justify-between flex-wrap even:border bg-card odd:bg-accent"
             incrementY={80}
             incrementZ={0}
           >
@@ -59,7 +59,7 @@ export function Services() {
               <sup className="font-black text-muted-foreground">
                 {index + 1}
               </sup>
-              <h3 className="text-5xl max-w-[13ch] font-bold">
+              <h3 className="text-5xl max-w-[13ch] font-serif font-bold">
                 {service.title}
               </h3>
             </div>

@@ -7,31 +7,31 @@ import { Button } from '@/components/ui/button';
 const PROCESS_PHASES = [
   {
     id: 'phase-1',
-    title: 'Discover',
-    duration: 'Week 1',
+    title: 'Research',
+    duration: 'The Foundation . Step 1',
     description:
-      'Our journey begins with a deep dive into your vision. In the Discovery phase, we engage in meaningful conversations to grasp your brand identity, goals, and the essence you want to convey. This phase sets the stage for all that follows.',
+      'We conduct granular, localised research to map the precise nature of health inequities, financing gaps, and digital barriers. We do not rely on external assumptions  every intervention is built on context-specific, evidence-based intelligence.',
   },
   {
     id: 'phase-2',
-    title: 'Design',
-    duration: 'Weeks 2-4',
+    title: 'Translate',
+    duration: 'The Bridge . Step 2',
     description:
-      'In the Design phase, we work together to create a comprehensive brand strategy that aligns with your goals and vision. This includes defining your brand voice, messaging, and visual identity, as well as developing a brand style guide.',
+      'Research without application is merely theory. We leverage technology to translate findings into functional mechanisms  from digital frameworks for health data interoperability to platforms that simplify regulatory compliance for innovators.',
   },
   {
     id: 'phase-3',
-    title: 'Build',
-    duration: 'Weeks 5-8',
+    title: 'Advocate',
+    duration: 'The Catalyst . Step 3',
     description:
-      "In the Build phase, we build your brand's digital presence, including your website, social media accounts, and marketing materials. This includes creating a content strategy, developing a user experience, and optimizing your website for search engines.",
+      'We mobilise public and political will through data-driven storytelling and targeted campaigns. We build coalitions among civil society, healthcare professionals, and government stakeholders to champion necessary systemic reforms.',
   },
   {
     id: 'phase-4',
-    title: 'Grow',
-    duration: 'Ongoing',
+    title: 'Legislate',
+    duration: 'The Anchor . Step 4',
     description:
-      "In the Grow phase, we continue to build on your brand's digital presence, monitoring and adjusting your strategy as needed. This includes gathering feedback, analyzing data, and making data-driven decisions to improve your brand over time.",
+      'Our ultimate differentiator. Where advocacy creates momentum, our legal expertise codifies it. We identify legislative lacunas, draft model policies, and work directly with lawmakers  ensuring health equity is a permanent legal reality, not a temporary project.',
   },
 ];
 
@@ -49,18 +49,20 @@ export function Process() {
               scaleRange={[1, 1.8]}
               className="origin-left py-6 place-content-center"
             >
-              <h2 className="text-6xl md:text-7xl font-bold">
+              <h2 className="text-6xl md:text-7xl font-bold font-serif">
                 How we <br /> work
               </h2>
             </ScrollScale>
-            <Button variant={'secondary'}>Start your project</Button>
+            <Button variant={'secondary'}>Partner with us.</Button>
           </ScrollAnimation>
         </div>
         <div className="flex flex-col gap-12">
           {PROCESS_PHASES.map((phase) => (
             <div className="flex flex-col gap-6" key={phase.id}>
               <div className="flex ">
-                <h3 className="text-4xl font-bold mr-2">{phase.title}</h3>
+                <h3 className="text-4xl font-bold font-serif mr-2">
+                  {phase.title}
+                </h3>
                 <span className="font-black text-muted-foreground">
                   {phase.duration}
                 </span>

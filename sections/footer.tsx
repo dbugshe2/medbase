@@ -1,25 +1,24 @@
-import GithubIcon from "@/components/icons/github-icon";
 import LinkedinIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
+import InstagramIcon from "@/components/icons/insta-icon";
 import { Logo } from "@/components/logo";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";import Link from "next/link";
 
 const SOCIAL_LINKS = [
     {
         id: 'twitter-social-link',
-        href: 'https://twitter.com/veo',
+        href: 'https://x.com/medbaseafrica?s=21',
         icon: XIcon
     },
     {
         id: 'linkedin-social-link',
-        href: 'https://www.linkedin.com/company/veo',
+        href: 'https://www.linkedin.com/company/medbase-africa/',
         icon: LinkedinIcon
     },
     {
-        id: 'github-social-link',
-        href: 'https://github.com/veo',
-        icon: GithubIcon
+        id: 'insta-social-link',
+        href: 'https://www.instagram.com/medbaseafrica?igsh=dnI5OWJ3d2FseTVj',
+        icon: InstagramIcon
     }
 ]
 const LINKS = [
@@ -27,18 +26,18 @@ const LINKS = [
         label: 'Home',
         href: '/',
     },
-    {
-        label: 'About',
-        href: '/about',
-    },
-    {
-        label: 'Services',
-        href: '/services',
-    },
-    {
-        label: 'Pricing',
-        href: '/pricing',
-    }
+    // {
+    //     label: 'About',
+    //     href: '/about',
+    // },
+    // {
+    //     label: 'Services',
+    //     href: '/services',
+    // },
+    // {
+    //     label: 'Pricing',
+    //     href: '/pricing',
+    // }
 ]
 export function Footer() {
     return (
@@ -48,14 +47,14 @@ export function Footer() {
                     <div className="size-6">
                         <Logo className="size-full" />
                     </div>
-                    <span className="inline-block text-lg font-bold">Veo</span>
+                    <span className="inline-block text-lg font-bold">Medbase</span> Africa
                 </div>
                 <ul className="flex items-center gap-2">
                     {
                         SOCIAL_LINKS.map((link) => (
                             <li key={link.id}>
                                 <Button variant={'ghost'} size={'icon'}>
-                                    <a href={link.href}>
+                                    <a href={link.href} target="_blank" rel="noopener noreferrer">
                                         <link.icon />
                                     </a>
                                 </Button>
@@ -64,7 +63,7 @@ export function Footer() {
                     }
                 </ul>
             </div>
-            
+
             <div className="flex gap-4 justify-between flex-wrap">
                 <ul className="flex py-4 justify-self-start mt-2 gap-4">
                     {
@@ -79,7 +78,7 @@ export function Footer() {
                 </ul>
 
                  <ul className="flex py-4 justify-self-start mt-2 gap-4">
-                    <li>
+                    {/* <li>
                         <Link className="text-foreground/30 hover:text-foreground font-medium text-sm" href={'/privacy'}>
                             Privacy
                         </Link>
@@ -88,12 +87,12 @@ export function Footer() {
                         <Link className="text-foreground/30 hover:text-foreground font-medium text-sm" href={'/terms'}>
                             Terms
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
 
             <small className="text-muted-foreground">
-                &copy; {new Date().getFullYear()} Veo. created by <a href="https://x.com/lbnm_yussef" className="text-foreground font-medium">@youcefBnm</a>
+                &copy; {new Date().getFullYear()} Medbase Africa.
             </small>
         </footer>
     )

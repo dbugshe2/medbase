@@ -3,34 +3,39 @@ import { ContainerStagger } from '@/components/systaliko-ui/blocks/container-sta
 import { TextStaggerInview } from '@/components/systaliko-ui/text/text-stagger-inview';
 import { ANIMATION_VARIANTS } from '@/components/systaliko-ui/utils/animation-variants';
 import { Button } from '@/components/ui/button';
-import { Axis3dIcon, Building2Icon, ListStartIcon } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Axis3dIcon,
+  Building2Icon,
+  ListStartIcon,
+} from 'lucide-react';
 import { stagger } from 'motion';
 import { motion, MotionConfig } from 'motion/react';
 
 const VALUES = [
   {
     id: 'value-craft',
-    title: 'Craft driven',
+    title: 'Downstream Delivery',
     icon: Axis3dIcon,
-    iconBg: 'from-indigo-600 to-indigo-500 ',
+    iconBg: 'from-indigo-400 to-indigo-300 ',
     description:
-      'We design with craft, not with a blueprint. We build modern web products using component-driven development, automated testing, and performance-first best practices. Our code is documented and deliverable-ready.',
+      'Global organisations excel at clinical delivery and humanitarian aid, but rarely alter the structural rules of the health system itself.',
   },
   {
     id: 'value-startegy',
-    title: 'Strategy first',
+    title: 'Upstream Research',
     icon: ListStartIcon,
-    iconBg: ' from-pink-600 to-pink-500 ',
+    iconBg: ' from-pink-400 to-pink-300 ',
     description:
-      'We start with a clear strategy and build a product that solves real problems. We focus on user research, information architecture, and product flows that solve real problems.',
+      'Traditional think-tanks produce vital, granular data that too often remains locked away in academic white papers, lacking functional application.',
   },
   {
     id: 'value-business',
-    title: 'Business minded',
+    title: 'Unprotected Innovation',
     icon: Building2Icon,
-    iconBg: 'from-emerald-600 to-emerald-500 ',
+    iconBg: 'from-emerald-400 to-emerald-300 ',
     description:
-      'We understand the business and its needs. We craft messaging that fits your brand and speaks to real user needs — from hero lines and product microcopy to onboarding flows and launch email sequences.',
+      'Digital tools are deployed without robust data privacy laws, and climate-health crises hit communities without proactive resource allocation policies in place.',
   },
 ];
 
@@ -43,16 +48,16 @@ export function Values() {
           <TextStaggerInview
             as="h2"
             animation="bottom"
-            className="text-3xl md:text-4xl font-bold"
+            className="text-3xl md:text-4xl font-bold font-serif"
           >
-            Bold brands, Beautiful products for Real growth
+            The architecture of global health is currently fragmented.
           </TextStaggerInview>
-          <Button variant={'link'}>Request demo</Button>
+          {/* <Button variant={'outline'}>See how we fix it →</Button> */}
         </div>
         <ContainerStagger
           className="
-            col-span-2 flex flex-col md:grid grid-cols-2 md:grid-rows-[50px_1fr_50px_1fr_50px] gap-6 
-            [&>*]:row-span-2 
+            col-span-2 flex flex-col md:grid grid-cols-2 md:grid-rows-[50px_1fr_50px_1fr_50px] gap-6
+            [&>*]:row-span-2
             [&>*:nth-child(2)]:row-start-2
         "
         >
@@ -60,15 +65,15 @@ export function Values() {
             {VALUES.map((value) => (
               <motion.div
                 key={value.id}
-                className="py-6 px-4 space-y-4 shadow bg-card rounded-xl border place-content-center"
+                className="py-6 px-4 space-y-4  bg-card rounded-xl border place-content-center"
                 variants={variants}
                 transition={{ duration: 0.3, ease: 'easeOut' }}
               >
-                <div
+                {/*<div
                   className={`size-14 flex items-center justify-center -bg-linear-45 rounded ${value.iconBg}`}
                 >
                   <value.icon className="size-8 text-muted" />
-                </div>
+                </div>*/}
 
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">{value.title}</h3>
