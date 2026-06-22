@@ -3,10 +3,10 @@ import { Badge } from '@/components/ui/badge';
 
 export function About() {
   return (
-    <section className="py-16 px-8 min-h-screen place-content-center bg-secondary">
+    <section className="py-16 px-8 min-h-screen place-content-center bg-accent">
       <div className="flex flex-col space-y-4 justify-center items-center max-w-3xl mx-auto text-center">
         <Badge   variant="outline">
-          Empower Africa to build equitable health systems
+          <span className="text-base">Empower Africa to build equitable health systems</span>
         </Badge>
         <TextStaggerInview
           animation="bottom"
