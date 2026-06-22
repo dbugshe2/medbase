@@ -69,11 +69,11 @@ export function Values() {
                 variants={variants}
                 transition={{ duration: 0.3, ease: 'easeOut' }}
               >
-                <div
+                {/*<div
                   className={`size-14 flex items-center justify-center -bg-linear-45 rounded ${value.iconBg}`}
                 >
-                  {/*<value.icon className="size-8 text-muted" />*/}
-                </div>
+                  <value.icon className="size-8 text-muted" />
+                </div>*/}
 
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">{value.title}</h3>
