@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils/shared-utils';
 
 interface RatingStarsProps extends React.HTMLAttributes<HTMLDivElement> {
   rating: number;

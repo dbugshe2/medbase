@@ -28,7 +28,7 @@ export function MobileNav() {
                         }
                         <div className="flex flex-col gap-4">
                             <Button variant={'outline'}>
-                                Book a meeting 
+                                Partner With Us
                             </Button>
 
                             <ModeToggle />

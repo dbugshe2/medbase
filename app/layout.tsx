@@ -1,24 +1,26 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, IBM_Plex_Mono, Lora } from 'next/font/google';
+import {  Fraunces, Inter, JetBrains_Mono, Lora } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { data } from '@/data/data';
 import { ThemeProvider } from '@/providers/theme-provider';
 import { Header } from '@/sections/header';
 import { Footer } from '@/sections/footer';
+import { Toaster } from '@/components/ui/sonner';
+import { cn } from "@/utils";
 
-const fontSans = Plus_Jakarta_Sans({
-  variable: '--font-sans',
-  subsets: ['latin'],
+const loraHeading = Lora({subsets:['latin'],variable:'--font-heading'});
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+
+const fontSerif = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-serif",
 });
-const fontMono = IBM_Plex_Mono({
-  variable: '--font-mono',
-  subsets: ['latin'],
-  weight: ['400'],
-});
-const fontSerif = Lora({
-  variable: '--font-serif',
-  subsets: ['latin'],
+
+const fontMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     description: data.description,
     images: [
       {
-        url: 'https://veo.vercel.app/og-image.png',
+        url: 'https://medbase.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: data.name,
@@ -46,17 +48,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={cn("font-sans", inter.variable, loraHeading.variable)}>
+        <head>
+        <script
+          async
+          crossOrigin="anonymous"
+          src="https://tweakcn.com/live-preview.min.js"
+        />
+      </head>
       <body
-        className={`${fontSans.variable} ${fontMono.variable} ${fontSerif.variable} antialiased`}
+        className={`${inter.variable} ${fontMono.variable} ${fontSerif.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <Header />
           {children}
+          <Toaster />
           <Footer />
         </ThemeProvider>
 

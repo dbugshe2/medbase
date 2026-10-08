@@ -11,7 +11,7 @@ import {
   useTransform,
 } from 'motion/react';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils/shared-utils';
 
 interface CardStickyProps extends HTMLMotionProps<'div'> {
   arrayLength: number;

@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils/shared-utils';
 import { cva, VariantProps } from 'class-variance-authority';
 
 export const cardVariants = cva('rounded-xl  flex flex-col border gap-6 p-6', {

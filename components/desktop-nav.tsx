@@ -21,7 +21,7 @@ export function DesktopNav() {
 
             <div className="flex gap-4 items-center">
                 <Button variant={'outline'}>
-                    Book a meeting 
+                    Partner With Us
                 </Button>
 
                 <ModeToggle />
