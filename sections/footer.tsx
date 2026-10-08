@@ -92,7 +92,7 @@ export function Footer() {
             </div>
 
             <small className="text-muted-foreground">
-                &copy; {new Date().getFullYear()} Medbase Africa.
+                &copy; {new Date().getFullYear()} Medbase Africa Consultancy.
             </small>
         </footer>
     )
